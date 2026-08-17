@@ -11,11 +11,25 @@
             background: black;
         }
 
+        @font-face {
+            font-family: '8bitoperator JVE';
+            src: url('fonts/8bitoperator_jve.woff2') format('woff2'),
+             url('fonts/8bitoperator_jve.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+            font-family: '8bitoperator JVE', monospace;
+            font-size: 16px;
+            image-rendering: pixelated;
+            -webkit-font-smoothing: none;
+            -moz-osx-font-smoothing: unset;
         }
 
         img {
@@ -26,23 +40,7 @@
 
         p {
             color: black;
-            font-size: 72px;
-            @font-face {
-    font-family: '8bitoperator JVE';
-    src: url('fonts/8bitoperator_jve.woff2') format('woff2'),
-         url('fonts/8bitoperator_jve.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  /* Pixel font rendering optimization */
-  body {
-    font-family: '8bitoperator JVE', monospace;
-    font-size: 16px;
-    image-rendering: pixelated;
-    -webkit-font-smoothing: none;
-    -moz-osx-font-smoothing: unset;
-  }
+            font-size: 36px;
         }
     </style>
 </head>
